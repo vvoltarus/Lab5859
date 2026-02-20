@@ -6,20 +6,16 @@ During LEVEL 1 network validation, the SSH service failed to start.
 
 Initial configuration check:
 
-<code>
-sudo sshd -t
-</code>
+<code>sudo sshd -t</code>
 Error returned:
-<code>
-no hostkeys available
-</code>
+
+<code>no hostkeys available</code>
 Further diagnostics revealed:
-<code>
-error in libcrypto
-</code>
+<code>error in libcrypto</code>
+
 After partial correction, a new error appeared:
-<code>
-missing privilege separation directory: /run/sshd </code>
+
+<code>missing privilege separation directory: /run/sshd </code>
 
 Diagnostic Process
 1. Configuration Validation
@@ -27,7 +23,7 @@ Diagnostic Process
 
 Flag explanation:
 
--t — test mode. Validates configuration and required files without starting the daemon.
+<code>-t </code>— test mode. Validates configuration and required files without starting the daemon.
 
 This is a safe method to verify SSH before restarting the service.
 
@@ -42,21 +38,21 @@ Host keys are mandatory for SSH daemon identity and cryptographic negotiation.
 
 Remediation Steps
 1. Remove Corrupted Host Keys
-sudo rm /etc/ssh/ssh_host_*
+<code>sudo rm /etc/ssh/ssh_host_*</code>
 
 In a lab environment, regenerating host keys is acceptable.
 
 Note: Host keys identify the server. Regenerating them will trigger a host verification warning on clients.
 
 2. Regenerate Default Host Keys
-sudo ssh-keygen -A
+<code>sudo ssh-keygen -A</code>
 
 Flag explanation:
 
--A — generate all default host keys (RSA, ECDSA, ED25519) if missing.
+<code>-A</code> — generate all default host keys (RSA, ECDSA, ED25519) if missing.
 
 3. Revalidate Configuration
-sudo sshd -t
+<code>sudo sshd -t</code>
 
 The host key error was resolved.
 
@@ -64,32 +60,30 @@ The host key error was resolved.
 
 New error:
 
-missing privilege separation directory: /run/sshd
+<code>missing privilege separation directory: /run/sshd</code>
 
 Cause:
 
-/run is a temporary filesystem (tmpfs) recreated at boot.
+<code>/run</code> is a temporary filesystem (tmpfs) recreated at boot.
 The required runtime directory for SSH privilege separation was missing.
 
 Privilege separation improves security by isolating unprivileged SSH processes.
 
 5. Create Required Directory
-sudo mkdir -p /run/sshd
-sudo chmod 0755 /run/sshd
+<code>sudo mkdir -p /run/sshd
+sudo chmod 0755 /run/sshd</code>
 
 Flag explanation:
 
--p — create parent directories if needed.
+<code>-p</code> — create parent directories if needed.
 
 0755 — owner: rwx; group: rx; others: rx.
 
 6. Restart SSH Service
-sudo systemctl restart ssh
-sudo systemctl status ssh --no-pager
+   
+<code>sudo systemctl restart ssh
+sudo systemctl status ssh </code>
 
-Flag explanation:
-
---no-pager — print output directly to the terminal instead of using a pager (e.g., less).
 
 Result: SSH service successfully started.
 
@@ -101,6 +95,6 @@ SSH host keys are mandatory for daemon startup.
 
 Cryptographic errors often indicate corrupted key material.
 
-/run is a volatile filesystem.
+<code>/run</code> is a volatile filesystem.
 
 Correct diagnostic sequence prevents remote lockouts.
