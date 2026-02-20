@@ -1,4 +1,4 @@
-# LEVEL 1 — SSH Service Recovery Incident
+# SSH Service Recovery Incident
 
 ## Context
 
