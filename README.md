@@ -25,34 +25,29 @@ The lab demonstrates practical understanding of:
 
 Instead of isolated exercises, the project evolves one infrastructure step by step.
 
-Network Topology :
+---
+
+## Network Topology :
 
 ![Lab5859 Network Topology](assets/images/lab5859_network_topology.png)
 ---
 
-## Completed Levels
+## Lab Progress
 
-**LEVEL 1 — Infrastructure Base**
 
-- isolated internal network
-- static IP configuration (Netplan)
-- OpenSSH deployment
-- centralized SSH access
-- persistent system logging
+| Level   | Name                          | Status        |
+| ------- | ----------------------------- | ------------- |
+| Level 1 | Infrastructure Base           | ✔ Completed   |
+| Level 2 | Secure Overlay (WireGuard)    | ✔ Completed   |
+| Level 3 | Firewall Control (iptables)   | ✔ Completed   |
+| Level 4 | Recon & Visibility            | ⚙ In Progress |
+| Level 5 | SMB Enumeration               | ⏳ Planned     |
+| Level 6 | Beacon Simulation             | ⏳ Planned     |
+| Level 7 | Centralized Control (Ansible) | ⏳ Planned     |
+| Level 8 | Storage & Recovery            | ⏳ Planned     |
+| Level 9 | Memory Fundamentals           | ⏳ Planned     |
 
-**LEVEL 2 — Secure Overlay**
-
-- WireGuard VPN
-- encrypted peer-to-peer tunnel
-- virtual interface `wg0`
-
-**LEVEL 3 — Firewall Control**
-
-- iptables configuration
-- deny-by-default policy
-- controlled service exposure
-- kernel firewall logging
-
+The lab progresses step-by-step from basic infrastructure setup to security monitoring, offensive reconnaissance, centralized control and memory exploitation fundamentals.
 ---
 
 ## Lab Machines
