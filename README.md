@@ -89,7 +89,7 @@ Lab5859
 ├── docs/              # Detailed lab documentation
 ├── incidents/         # Incident reports and troubleshooting cases
 └── assets/            # Diagrams and screenshots
-
+```
 ---
 
 ## Next Stage
