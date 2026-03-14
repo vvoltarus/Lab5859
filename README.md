@@ -53,22 +53,12 @@ The lab progresses step-by-step from basic infrastructure setup to security moni
 
 ## Lab Machines
 
-| Host | IP | Role |
-|-----|-----|-----|
-| GW-LAB | 10.58.0.1 | gateway, VPN server, firewall, logging |
-| MGMT | 10.58.0.10 | central SSH administration node |
-| CLIENT-1 | 10.58.0.21 | VPN peer |
-| CLIENT-2 | 10.58.0.22 | internal client for testing |
-
-Network:
-LAB5859
-10.58.0.0/24
-
-
-WireGuard overlay:
-
-10.59.0.0/24
-
+| Host     | Role                                                | IP        |
+| -------- | --------------------------------------------------- | --------- |
+| GW-LAB   | Gateway, Firewall, WireGuard server                 | 10.0.0.1  |
+| MGMT     | Administration host (SSH management)                | 10.0.0.10 |
+| CLIENT-1 | Test host for reconnaissance and segmentation tests | 10.0.0.21 |
+| CLIENT-2 | Test host for lateral movement simulations          | 10.0.0.22 |
 
 ---
 
