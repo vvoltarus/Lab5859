@@ -62,17 +62,21 @@ The lab progresses step-by-step from basic infrastructure setup to security moni
 
 ---
 
-## What this project demonstrates
+## Lab Goals
 
-This lab shows practical skills in:
+This lab is designed to simulate a small controlled infrastructure where different security and administration techniques can be tested.
 
-- building controlled Linux infrastructure
-- implementing secure remote access
-- deploying modern VPN technology
-- designing firewall policies
-- observing system behavior through logs
+Key goals of the lab:
 
-The project focuses on real operational practices rather than theoretical exercises.
+* build a controlled Linux infrastructure from scratch
+* implement secure network segmentation
+* deploy encrypted communication using WireGuard
+* enforce firewall policies with iptables (deny-by-default model)
+* observe network behavior using reconnaissance tools such as Nmap
+* simulate attacker activity and detection patterns
+* practice incident recovery and troubleshooting
+* experiment with centralized control using Ansible
+* explore storage recovery and memory fundamentals
 
 ---
 
