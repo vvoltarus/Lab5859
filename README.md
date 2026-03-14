@@ -48,6 +48,7 @@ Instead of isolated exercises, the project evolves one infrastructure step by st
 | Level 9 | Memory Fundamentals           | ⏳ Planned     |
 
 The lab progresses step-by-step from basic infrastructure setup to security monitoring, offensive reconnaissance, centralized control and memory exploitation fundamentals.
+
 ---
 
 ## Lab Machines
