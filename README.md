@@ -80,6 +80,18 @@ Key goals of the lab:
 
 ---
 
+## Repository Structure
+
+```
+Lab5859
+│
+├── README.md          # Project overview
+├── docs/              # Detailed lab documentation
+├── incidents/         # Incident reports and troubleshooting cases
+└── assets/            # Diagrams and screenshots
+
+---
+
 ## Next Stage
 
 LEVEL 4 — Reconnaissance & Visibility
