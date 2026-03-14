@@ -25,6 +25,8 @@ The lab demonstrates practical understanding of:
 
 Instead of isolated exercises, the project evolves one infrastructure step by step.
 
+Network Topology
+![Lab5859 Network Topology](assets/images/Lab5859 Network Topology.drawio.png)
 ---
 
 ## Completed Levels
