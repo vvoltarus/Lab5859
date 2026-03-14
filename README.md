@@ -91,6 +91,11 @@ Lab5859
 └── assets/            # Diagrams and screenshots
 ```
 ---
+## Documentation
+
+Detailed lab documentation is available in the docs directory.
+
+---
 
 ## Next Stage
 
