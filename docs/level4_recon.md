@@ -35,6 +35,14 @@ INPUT DROP
 FORWARD DROP
 OUTPUT ACCEPT
 ```
+**Troubleshooting:**
+iptables commands produced "temporary failure in name resolution"
+
+Cause:
+missing /etc/hosts entry for system hostname
+
+Fix:
+added hostname to /etc/hosts
 
 **Allowed traffic**
 
