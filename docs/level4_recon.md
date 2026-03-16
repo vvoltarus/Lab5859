@@ -53,6 +53,7 @@ added hostname to /etc/hosts
 * HTTP port 8000 (lab service)
 
 All other traffic is logged and dropped.
+![rules](../assets/images/firewall_rules.png)
 
 ---
 
@@ -101,11 +102,7 @@ Discover exposed services through the firewall.
 
 Example output:
 
-```id="o1s1un"
-PORT     STATE    SERVICE
-22/tcp   filtered ssh
-8000/tcp open     http
-```
+![nmap](../assets/images/scan_nmap_victim.png)
 
 Interpretation:
 
@@ -155,10 +152,7 @@ While scans are running, firewall events appear in the system journal.
 
 Example log entry:
 
-```id="7v0r2d"
-FW-DROP: IN=enp0s8 SRC=10.58.0.22 DST=10.58.0.1
-PROTO=TCP SPT=43722 DPT=23
-```
+![firewall](../assets/images/journal_drop.png)
 
 Field meanings:
 
