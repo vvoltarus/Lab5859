@@ -97,16 +97,20 @@ Detailed lab documentation is available in the docs directory.
 
 ---
 
-## Next Stage
 
-LEVEL 4 — Reconnaissance & Visibility
+### Next Step — Level 5: SMB / NetBIOS Enumeration
 
-The next stage will introduce network scanning and analysis.
+The next stage of the lab focuses on **service exposure and network discovery through SMB and NetBIOS protocols**.
 
-Using Nmap from an internal client, the lab will demonstrate:
+In this level, a Samba service will be introduced to simulate a typical internal file-sharing host.
+The goal is to observe how SMB services appear during network enumeration and how segmentation and firewall rules affect their visibility.
 
-- how services appear during reconnaissance
-- how firewall rules affect scan results
-- how scanning activity is visible in system logs
+Key objectives:
 
-This step connects defensive infrastructure with attacker reconnaissance techniques.
+* deploy a Samba service inside the lab environment
+* perform NetBIOS discovery and SMB enumeration
+* analyze how firewall policies impact service visibility
+* observe enumeration traffic through system logs
+
+This stage connects **service exposure, reconnaissance techniques, and defensive monitoring** within the lab infrastructure.
+
