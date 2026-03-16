@@ -40,8 +40,8 @@ Instead of isolated exercises, the project evolves one infrastructure step by st
 | Level 1 | Infrastructure Base           | ✔ Completed   |
 | Level 2 | Secure Overlay (WireGuard)    | ✔ Completed   |
 | Level 3 | Firewall Control (iptables)   | ✔ Completed   |
-| Level 4 | Recon & Visibility            | ⚙ In Progress |
-| Level 5 | SMB Enumeration               | ⏳ Planned     |
+| Level 4 | Recon & Visibility            | ✔ Completed   |
+| Level 5 | SMB Enumeration               | ⚙ In Progress |
 | Level 6 | Beacon Simulation             | ⏳ Planned     |
 | Level 7 | Centralized Control (Ansible) | ⏳ Planned     |
 | Level 8 | Storage & Recovery            | ⏳ Planned     |
